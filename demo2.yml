@@ -1,0 +1,165 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/danielschmidt/projects/private/solidaritydemoproject
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 90
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 19
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: null
+    title: null
+    style:
+      backgroundColor: black
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 24
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 274
+    content: 'Daniels-MBP:solidaritydemoproject danielschmidt$ '
+  - delay: 300
+    content: 'npx solidarity'
+  - delay: 956
+    content: "\r\n"
+  - delay: 581
+    content: "\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Node"
+  - delay: 8
+    content: "\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Watchman\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying React Native"
+  - delay: 6
+    content: "\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Package JSON\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying NPM\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Yarn\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Detox\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Android"
+  - delay: 1493
+    content: "\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Verifying Xcode"
+  - delay: 6
+    content: "\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h\e[2K\e[1G\e[36m⠙\e[39m Verifying Node\e[2K\e[1G\e[36m⠙\e[39m Verifying React Native\e[2K\e[1G\e[36m⠙\e[39m Verifying NPM\e[2K\e[1G\e[36m⠙\e[39m Verifying Yarn"
+  - delay: 6
+    content: "\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h\e[2K\e[1G\e[?25h\e[31m✖\e[39m node: you have '10.11.0', but the project requires '10.9.0'\r\n\e[2K\e[1G\e[?25h"
+  - delay: 400
+    content: "\e[2K\e[1G\e[36m⠙\e[39m Verifying Xcode"
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Verifying Xcode"
+  - delay: 80
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Verifying Xcode"
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Verifying Xcode"
+  - delay: 40
+    content: "\e[2K\e[1G\e[?25h\r\n\e[31mSolidarity checks failed.\e[39m\r\n\e[?25h"
+  - delay: 5
+    content: 'Daniels-MBP:solidaritydemoproject danielschmidt$ '
+  - delay: 400
+    content: 'npx solidarity report'
+  - delay: 681
+    content: "\r\n"
+  - delay: 591
+    content: "\e[?25l\e[2K\e[1G\e[36m⠋\e[39m Building Report"
+  - delay: 1496
+    content: "\e[2K\e[1G\e[36m⠙\e[39m Building Report"
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Building Report"
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Building Report"
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Building Report"
+  - delay: 93
+    content: "\e[2K\e[1G\e[?25h\e[0m# ⚠️ Environment Report:\e[0m\r\n\e[0m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[0m\r\n\e[0m### System\e[0m\r\n\e[0m\e[0m\r\n"
+  - delay: 9
+    content: "\e[90m|\e[39m\e[31m System Basics \e[39m\e[90m|\e[39m\e[31m Value                                         \e[39m\e[90m|\e[39m\r\n\e[90m|\e[39m ------------- \e[90m|\e[39m --------------------------------------------- \e[90m|\e[39m\r\n\e[90m|\e[39m OS            \e[90m|\e[39m macOS 10.14                                   \e[90m|\e[39m\r\n\e[90m|\e[39m CPU           \e[90m|\e[39m x64 Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz \e[90m|\e[39m\r\n\e[90m|\e[39m Report Info   \e[90m|\e[39m 10/11/2018, 11:45:17 PM (in 1.84s)            \e[90m|\e[39m\r\n\e[0m\e[0m\r\n\e[0m\e[0m\r\n\e[0m### Commands\e[0m\r\n\e[0m\e[0m\r\n"
+  - delay: 10
+    content: "\e[90m|\e[39m\e[31m Binary        \e[39m\e[90m|\e[39m\e[31m Location                                                         \e[39m\e[90m|\e[39m\e[31m Version             \e[39m\e[90m|\e[39m\e[31m Desired         \e[39m\e[90m|\e[39m\r\n\e[90m|\e[39m ------------- \e[90m|\e[39m ---------------------------------------------------------------- \e[90m|\e[39m ------------------- \e[90m|\e[39m --------------- \e[90m|\e[39m\r\n\e[90m|\e[39m applesimutils \e[90m|\e[39m /usr/local/bin/applesimutils                                     \e[90m|\e[39m 0.6.0               \e[90m|\e[39m \e[32m*ANY*\e[39m           \e[90m|\e[39m\r\n\e[90m|\e[39m yarn          \e[90m|\e[39m /usr/local/bin/yarn                                              \e[90m|\e[39m 1.10.1              \e[90m|\e[39m 1.10.1          \e[90m|\e[39m\r\n\e[90m|\e[39m npm           \e[90m|\e[39m /usr/local/bin/npm                                               \e[90m|\e[39m 6.4.1               \e[90m|\e[39m 6.4.1           \e[90m|\e[39m\r\n\e[90m|\e[39m react-native  \e[90m|\e[39m /Users/danielschmidt/.nvm/versions/node/v10.9.0/bin/react-native \e[90m|\e[39m 0.57.2              \e[90m|\e[39m 0.57.2          \e[90m|\e[39m\r\n\e[90m|\e[39m react-native  \e[90m|\e[39m /Users/danielschmidt/.nvm/versions/node/v10.9.0/bin/react-native \e[90m|\e[39m 2.0.1               \e[90m|\e[39m 2.0.1           \e[90m|\e[39m\r\n\e[90m|\e[39m watchman      \e[90m|\e[39m /usr/local/bin/watchman                                          \e[90m|\e[39m 4.9.0               \e[90m|\e[39m \e[32m*ANY*\e[39m           \e[90m|\e[39m\r\n\e[90m|\e[39m node          \e[90m|\e[39m /usr/local/bin/node                                              \e[90m|\e[39m 10.11.0             \e[90m|\e[39m 10.9.0          \e[90m|\e[39m\r\n\e[90m|\e[39m xcrun         \e[90m|\e[39m /usr/bin/xcrun                                                   \e[90m|\e[39m 43                  \e[90m|\e[39m 43              \e[90m|\e[39m\r\n\e[90m|\e[39m detox         \e[90m|\e[39m /Users/danielschmidt/.nvm/versions/node/v10.9.0/bin/detox        \e[90m|\e[39m \e[31m*UNKNOWN*\e[39m           \e[90m|\e[39m \e[32m*ANY*\e[39m           \e[90m|\e[39m\r\n\e[90m|\e[39m xcodebuild    \e[90m|\e[39m /usr/bin/xcodebuild                                              \e[90m|\e[39m 10.0                \e[90m|\e[39m 10.0            \e[90m|\e[39m\r\n\e[0m\e[0m\r\n\e[0m\e[0m\r\n\e[0m### Environment Variables\e[0m\r\n\e[0m\e[0m\r\n\e[90m|\e[39m\e[31m Environment Var \e[39m\e[90m|\e[39m\e[31m Value                                    \e[39m\e[90m|\e[39m\r\n\e[90m|\e[39m --------------- \e[90m|\e[39m ---------------------------------------- \e[90m|\e[39m\r\n\e[90m|\e[39m $ANDROID_HOME   \e[90m|\e[39m /Users/danielschmidt/Library/Android/sdk \e[90m|\e[39m\r\n\e[0m\e[0m\r\n\e[0m\e[0m\r\n\e[0m### Filesystem\e[0m\r\n\e[0m\e[0m\r\n\e[90m|\e[39m\e[31m Location       \e[39m\e[90m|\e[39m\e[31m Type \e[39m\e[90m|\e[39m\e[31m Exists                     \e[39m\e[90m|\e[39m\r\n\e[90m|\e[39m -------------- \e[90m|\e[39m ---- \e[90m|\e[39m -------------------------- \e[90m|\e[39m\r\n\e[90m|\e[39m ./package.json \e[90m|\e[39m File \e[90m|\e[39m \e[32m✔︎\e[39m\e[32m YES\e[39m                     \e[90m|\e[39m\r\n\e[0m\e[0m\r\n\e[0m\e[0m\r\n\e[0m### Android SDK\e[0m\r\n\e[0m\e[0m\r\n\e[90m|\e[39m\e[31m Project API Version        \e[39m\e[90m|\e[39m\e[31m Project Build Tools                    \e[39m\e[90m|\e[39m\r\n\e[90m|\e[39m -------------------------- \e[90m|\e[39m -------------------------------------- \e[90m|\e[39m\r\n\e[90m|\e[39m \e[32mAPI 27 Available\e[39m           \e[90m|\e[39m \e[32mBuild Tools 27.0.3 Available\e[39m           \e[90m|\e[39m\r\n\e[0m\e[0m\r\n\e[0m\e[0m\r\n\e[0m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[34m-\e[39m\e[31m-\e[39m\e[37m-\e[39m\e[0m\r\n\e[?25h"
+  - delay: 7
+    content: 'Daniels-MBP:solidaritydemoproject danielschmidt$ '
+  - delay: 622
+    content: "logout\r\n"
